@@ -27,6 +27,7 @@ for (let i = 0; i < options.length; i++) {
 
 changeData();
 
+// Functions for graph generation
 function changeData() {
   selection = document.getElementById('dropdown').value;
 
