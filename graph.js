@@ -1,3 +1,45 @@
+// Initial page setup
+const meta = {
+  'Legend Rhony': {
+    file: 'legend_rhony.csv',
+    web: 'https://www.youtube.com/channel/UCDKUIl7MVHNTjZgDRPDUdxw',
+    strength: -2000,
+    distance: 500
+  },
+  detectiveG: {
+    file: 'detectiveG.csv',
+    web:
+      'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
+    strength: -1500,
+    distance: 500
+  }
+};
+
+const options = Object.keys(meta);
+
+const select = document.getElementById('dropdown');
+
+for (let i = 0; i < options.length; i++) {
+  opt = document.createElement('option');
+  opt.textContent = options[i];
+  select.appendChild(opt);
+}
+
+changeData();
+
+function changeData() {
+  selection = document.getElementById('dropdown').value;
+
+  a = document.getElementById('link');
+  a.href = meta[selection].web;
+
+  loadGraph(
+    meta[selection].file,
+    meta[selection].strength,
+    meta[selection].distance
+  );
+}
+
 function loadGraph(file, strength, distance) {
   const svg = d3.select('svg'),
     width = +svg.attr('width'),
@@ -19,9 +61,7 @@ function loadGraph(file, strength, distance) {
     .domain(['Legendary', 'Epic', 'Elite', 'Advanced'])
     .range(['#ff9b00', '#ac41c2', '#058cc3', '#2d9830']);
 
-  const tooltip = d3
-    .select('#info')
-    .attr('class', 'tooltip')
+  const tooltip = d3.select('#info').attr('class', 'tooltip');
 
   const simulation = d3
     .forceSimulation()
@@ -126,9 +166,7 @@ function loadGraph(file, strength, distance) {
             });
             table += '</table>';
 
-            info_value = `<br>Pairing score: ${(value_sum / 378).toFixed(
-              2
-            )}`;
+            info_value = `<br>Pairing score: ${(value_sum / 378).toFixed(2)}`;
 
             tooltip
               .transition()
