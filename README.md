@@ -1,2 +1,3 @@
-# RoC-data
-Data for Rise of Civilizations
+# Rise of Civilizations data
+
+Rise of Civilizations commander pairing data

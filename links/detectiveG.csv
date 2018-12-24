@@ -1,0 +1,141 @@
+primary,secondary,value
+Cao Cao,Minamoto no Yoshitsune,9
+Cao Cao,Pelagius,6
+Cao Cao,Lancelot,3
+Cao Cao,Dragon Lancer,1
+Cao Cao,Joan of Arc,3
+Cao Cao,Tomoe Gozen,1
+Charles Martel,Richard I,9
+Charles Martel,Joan of Arc,6
+Charles Martel,Scipio Africanus,3
+Charles Martel,Sun Tzu,1
+Charles Martel,Tomoe Gozen,1
+Charles Martel,City Keeper,0.5
+Frederick I,Julius Caesar,9
+Frederick I,Hannibal Barca,6
+Frederick I,Scipio Africanus,3
+Frederick I,Joan of Arc,1
+Frederick I,Tomoe Gozen,1
+Julius Caesar,Hannibal Barca,9
+Julius Caesar,Frederick I,6
+Julius Caesar,Scipio Africanus,3
+Julius Caesar,Joan of Arc,1
+Julius Caesar,Tomoe Gozen,1
+Minamoto no Yoshitsune,Cao Cao,9
+Minamoto no Yoshitsune,Pelagius,6
+Minamoto no Yoshitsune,Lancelot,3
+Minamoto no Yoshitsune,Joan of Arc,3
+Minamoto no Yoshitsune,Dragon Lancer,1
+Minamoto no Yoshitsune,Tomoe Gozen,1
+Richard I,Charles Martel,9
+Richard I,Sun Tzu,6
+Richard I,Joan of Arc,3
+Richard I,Eulji Mundeok,1
+Richard I,City Keeper,0.5
+Yi Seong-Gye,Sun Tzu,9
+Yi Seong-Gye,El Cid,6
+Yi Seong-Gye,Hermann,3
+Yi Seong-Gye,Kusunoki Masashige,1
+Yi Seong-Gye,Joan of Arc,3
+Yi Seong-Gye,Tomoe Gozen,1
+Yi Seong-Gye,Markswoman,0.5
+Boudica,Minamoto no Yoshitsune,9
+Boudica,Yi Seong-Gye,6
+Boudica,Sun Tzu,3
+Boudica,Joan of Arc,3
+Boudica,Hermann,1
+Boudica,Kusunoki Masashige,1
+Boudica,El Cid,1
+Boudica,Tomoe Gozen,1
+Eulji Mundeok,Richard I,9
+Eulji Mundeok,Charles Martel,6
+Eulji Mundeok,Sun Tzu,3
+Eulji Mundeok,Joan of Arc,3
+Eulji Mundeok,City Keeper,1
+Eulji Mundeok,Tomoe Gozen,1
+Hermann,Yi Seong-Gye,9
+Hermann,El Cid,6
+Hermann,Kusunoki Masashige,3
+Hermann,Joan of Arc,3
+Hermann,Tomoe Gozen,1
+Hermann,Markswoman,0.5
+Kusunoki Masashige,Yi Seong-Gye,9
+Kusunoki Masashige,Sun Tzu,6
+Kusunoki Masashige,El Cid,3
+Kusunoki Masashige,Joan of Arc,3
+Kusunoki Masashige,Hermann,1
+Kusunoki Masashige,Tomoe Gozen,1
+Kusunoki Masashige,Markswoman,0.5
+Pelagius,Minamoto no Yoshitsune,9
+Pelagius,Cao Cao,6
+Pelagius,Lancelot,3
+Pelagius,Joan of Arc,3
+Pelagius,Dragon Lancer,1
+Pelagius,Tomoe Gozen,1
+Scipio Africanus,Joan of Arc,9
+Scipio Africanus,Richard I,6
+Scipio Africanus,Hannibal Barca,3
+Scipio Africanus,Tomoe Gozen,1
+Sun Tzu,Yi Seong-Gye,9
+Sun Tzu,Charles Martel,6
+Sun Tzu,Richard I,3
+Sun Tzu,Joan of Arc,3
+Sun Tzu,Eulji Mundeok,1
+Sun Tzu,Tomoe Gozen,1
+Sun Tzu,Tomoe Gozen,0.5
+Lancelot,Cao Cao,9
+Lancelot,Minamoto no Yoshitsune,6
+Lancelot,Pelagius,3
+Lancelot,Joan of Arc,3
+Lancelot,Dragon Lancer,1
+Lancelot,Tomoe Gozen,1
+Joan of Arc,Hannibal Barca,1
+Cleopatra VII,Joan of Arc,9
+Cleopatra VII,Richard I,6
+Cleopatra VII,Boudica,3
+Cleopatra VII,Constance,0.5
+Cleopatra VII,Gaius Marius,0.5
+Cleopatra VII,Sarka,0.5
+Cleopatra VII,Centurion,0.5
+Constance,Cleopatra VII,0.5
+Constance,Gaius Marius,0.5
+Constance,Sarka,0.5
+Constance,Centurion,0.5
+Gaius Marius,Cleopatra VII,0.5
+Gaius Marius,Constance,0.5
+Gaius Marius,Sarka,0.5
+Gaius Marius,Centurion,0.5
+Sarka,Cleopatra VII,0.5
+Sarka,Constance,0.5
+Sarka,Gaius Marius,0.5
+Sarka,Centurion,0.5
+Centurion,Cleopatra VII,0.5
+Centurion,Constance,0.5
+Centurion,Gaius Marius,0.5
+Centurion,Sarka,0.5
+Lohar,Julius Caesar,0.5
+Lohar,El Cid,0.5
+Lohar,Richard I,0.5
+Lohar,Cao Cao,0.5
+Lohar,Frederick I,0.5
+Lohar,Minamoto no Yoshitsune,0.5
+Lohar,Yi Seong-Gye,0.5
+Lohar,Cleopatra VII,0.5
+Lohar,Charles Martel,0.5
+Lohar,Hannibal Barca,0.5
+Lohar,Eulji Mundeok,0.5
+Lohar,Joan of Arc,0.5
+Lohar,Hermann,0.5
+Lohar,Pelagius,0.5
+Lohar,Sun Tzu,0.5
+Lohar,Scipio Africanus,0.5
+Lohar,Kusunoki Masashige,0.5
+Lohar,Sarka,0.5
+Lohar,Lancelot,0.5
+Lohar,Tomoe Gozen,0.5
+Lohar,Gaius Marius,0.5
+Lohar,Constance,0.5
+Lohar,Markswoman,0.5
+Lohar,Dragon Lancer,0.5
+Lohar,City Keeper,0.5
+Lohar,Centurion,0.5

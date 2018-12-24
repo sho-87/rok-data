@@ -1,0 +1,159 @@
+primary,secondary,value
+Pelagius,Boudica,9
+Pelagius,Joan of Arc,6
+Pelagius,Scipio Africanus,3
+Pelagius,Hermann,1
+Pelagius,Minamoto no Yoshitsune,9
+Pelagius,Cao Cao,6
+Pelagius,Frederick I,3
+Eulji Mundeok,Scipio Africanus,9
+Eulji Mundeok,Boudica,6
+Eulji Mundeok,Joan of Arc,3
+Eulji Mundeok,Charles Martel,9
+Eulji Mundeok,Richard I,9
+Eulji Mundeok,Julius Caesar,6
+Eulji Mundeok,Frederick I,6
+Sun Tzu,Kusunoki Masashige,9
+Sun Tzu,Tomoe Gozen,6
+Sun Tzu,Joan of Arc,3
+Sun Tzu,Boudica,1
+Sun Tzu,Hermann,1
+Sun Tzu,Yi Seong-Gye,9
+Sun Tzu,Richard I,6
+Kusunoki Masashige,Sun Tzu,9
+Kusunoki Masashige,Hermann,6
+Kusunoki Masashige,Joan of Arc,3
+Kusunoki Masashige,Boudica,1
+Kusunoki Masashige,Scipio Africanus,1
+Kusunoki Masashige,Tomoe Gozen,1
+Kusunoki Masashige,Yi Seong-Gye,9
+Kusunoki Masashige,Frederick I,6
+Hermann,Tomoe Gozen,9
+Hermann,Joan of Arc,6
+Hermann,Boudica,3
+Hermann,Scipio Africanus,1
+Hermann,El Cid,9
+Scipio Africanus,Eulji Mundeok,9
+Scipio Africanus,Boudica,6
+Scipio Africanus,Joan of Arc,3
+Scipio Africanus,Richard I,9
+Scipio Africanus,Julius Caesar,6
+Scipio Africanus,Charles Martel,3
+Scipio Africanus,Frederick I,1
+Scipio Africanus,Hannibal Barca,1
+Boudica,Hermann,9
+Boudica,Joan of Arc,6
+Boudica,Scipio Africanus,3
+Boudica,Eulji Mundeok,1
+Boudica,Pelagius,1
+Boudica,Tomoe Gozen,1
+Boudica,Richard I,9
+Boudica,Minamoto no Yoshitsune,6
+Boudica,Frederick I,3
+Boudica,Charles Martel,1
+Boudica,Yi Seong-Gye,1
+El Cid,Hermann,9
+El Cid,Frederick I,6
+El Cid,Minamoto no Yoshitsune,3
+El Cid,Yi Seong-Gye,3
+El Cid,Cao Cao,1
+El Cid,Kusunoki Masashige,9
+El Cid,Boudica,6
+Cao Cao,Minamoto no Yoshitsune,9
+Cao Cao,Pelagius,6
+Cao Cao,Frederick I,3
+Cao Cao,Richard I,1
+Cao Cao,Joan of Arc,1
+Yi Seong-Gye,Richard I,9
+Yi Seong-Gye,Sun Tzu,6
+Yi Seong-Gye,Kusunoki Masashige,3
+Yi Seong-Gye,Frederick I,1
+Yi Seong-Gye,Boudica,1
+Yi Seong-Gye,Hermann,1
+Yi Seong-Gye,Cao Cao,1
+Yi Seong-Gye,Tomoe Gozen,1
+Hannibal Barca,Julius Caesar,9
+Hannibal Barca,Scipio Africanus,6
+Hannibal Barca,Frederick I,3
+Hannibal Barca,Joan of Arc,1
+Hannibal Barca,Richard I,1
+Hannibal Barca,Charles Martel,1
+Frederick I,Hermann,9
+Frederick I,Cao Cao,9
+Frederick I,Julius Caesar,6
+Frederick I,Richard I,3
+Frederick I,Charles Martel,3
+Frederick I,Scipio Africanus,1
+Frederick I,Boudica,1
+Frederick I,Joan of Arc,1
+Frederick I,Pelagius,1
+Frederick I,Yi Seong-Gye,1
+Julius Caesar,Hannibal Barca,9
+Julius Caesar,Scipio Africanus,6
+Julius Caesar,Frederick I,3
+Julius Caesar,Richard I,1
+Julius Caesar,Charles Martel,1
+Julius Caesar,Joan of Arc,1
+Joan of Arc,Cleopatra VII,1
+Minamoto no Yoshitsune,Cao Cao,9
+Minamoto no Yoshitsune,Frederick I,6
+Minamoto no Yoshitsune,Pelagius,3
+Minamoto no Yoshitsune,Joan of Arc,1
+Minamoto no Yoshitsune,Richard I,1
+Minamoto no Yoshitsune,Scipio Africanus,1
+Minamoto no Yoshitsune,Boudica,1
+Minamoto no Yoshitsune,Hermann,1
+Minamoto no Yoshitsune,Tomoe Gozen,1
+Richard I,Charles Martel,9
+Richard I,Eulji Mundeok,6
+Richard I,Scipio Africanus,3
+Richard I,Julius Caesar,1
+Richard I,Boudica,1
+Richard I,Joan of Arc,1
+Richard I,Frederick I,1
+Richard I,Hannibal Barca,1
+Charles Martel,Richard I,9
+Charles Martel,Eulji Mundeok,6
+Charles Martel,Boudica,3
+Charles Martel,Scipio Africanus,1
+Charles Martel,Joan of Arc,1
+Charles Martel,Frederick I,1
+Charles Martel,Julius Caesar,1
+Lohar,Julius Caesar,0.5
+Lohar,El Cid,0.5
+Lohar,Richard I,0.5
+Lohar,Cao Cao,0.5
+Lohar,Frederick I,0.5
+Lohar,Minamoto no Yoshitsune,0.5
+Lohar,Yi Seong-Gye,0.5
+Lohar,Cleopatra VII,0.5
+Lohar,Charles Martel,0.5
+Lohar,Hannibal Barca,0.5
+Lohar,Eulji Mundeok,0.5
+Lohar,Joan of Arc,0.5
+Lohar,Hermann,0.5
+Lohar,Pelagius,0.5
+Lohar,Sun Tzu,0.5
+Lohar,Scipio Africanus,0.5
+Lohar,Kusunoki Masashige,0.5
+Lohar,Sarka,0.5
+Lohar,Lancelot,0.5
+Lohar,Tomoe Gozen,0.5
+Lohar,Gaius Marius,0.5
+Lohar,Constance,0.5
+Lohar,Markswoman,0.5
+Lohar,Dragon Lancer,0.5
+Lohar,City Keeper,0.5
+Lohar,Centurion,0.5
+Cleopatra VII,Centurion,1
+Joan of Arc,Centurion,1
+Sarka,Centurion,1
+Constance,Centurion,1
+Gaius Marius,Centurion,1
+City Keeper,Richard I,9
+City Keeper,Charles Martel,6
+City Keeper,Eulji Mundeok,3
+City Keeper,Scipio Africanus,1
+City Keeper,Joan of Arc,1
+City Keeper,Boudica,1
+City Keeper,Frederick I,1

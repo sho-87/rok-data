@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    { "id": "Julius Caesar", "group": "Legendary" },
+    { "id": "El Cid", "group": "Legendary" },
+    { "id": "Richard I", "group": "Legendary" },
+    { "id": "Cao Cao", "group": "Legendary" },
+    { "id": "Frederick I", "group": "Legendary" },
+    { "id": "Minamoto no Yoshitsune", "group": "Legendary" },
+    { "id": "Yi Seong-Gye", "group": "Legendary" },
+    { "id": "Cleopatra VII", "group": "Legendary" },
+    { "id": "Charles Martel", "group": "Legendary" },
+    { "id": "Hannibal Barca", "group": "Legendary" },
+    { "id": "Eulji Mundeok", "group": "Epic" },
+    { "id": "Lohar", "group": "Epic" },
+    { "id": "Joan of Arc", "group": "Epic" },
+    { "id": "Hermann", "group": "Epic" },
+    { "id": "Pelagius", "group": "Epic" },
+    { "id": "Sun Tzu", "group": "Epic" },
+    { "id": "Scipio Africanus", "group": "Epic" },
+    { "id": "Kusunoki Masashige", "group": "Epic" },
+    { "id": "Boudica", "group": "Epic" },
+    { "id": "Sarka", "group": "Elite" },
+    { "id": "Lancelot", "group": "Elite" },
+    { "id": "Tomoe Gozen", "group": "Elite" },
+    { "id": "Gaius Marius", "group": "Elite" },
+    { "id": "Constance", "group": "Elite" },
+    { "id": "Markswoman", "group": "Advanced" },
+    { "id": "Dragon Lancer", "group": "Advanced" },
+    { "id": "City Keeper", "group": "Advanced" },
+    { "id": "Centurion", "group": "Advanced" }
+  ]
+}
