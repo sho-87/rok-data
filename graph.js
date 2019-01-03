@@ -17,6 +17,7 @@ const meta = {
   }
 };
 
+// Set dropdown options
 const options = Object.keys(meta);
 
 const select = document.getElementById('dropdown');
@@ -202,7 +203,7 @@ function loadGraph(file, strength, distance, radius) {
         function ticked() {
           // zoom to bounding box of nodes
           if (this.alpha() > 0.04) {
-            // set up zoom transform:
+            // set up zoom transform
             var xExtent = d3.extent(node.data(), function(d) {
               return d.x + 100;
             });
@@ -210,7 +211,7 @@ function loadGraph(file, strength, distance, radius) {
               return d.y;
             });
 
-            // get scales:
+            // get scales
             var xScale = (width / (xExtent[1] - xExtent[0])) * 0.75;
             var yScale = (height / (yExtent[1] - yExtent[0])) * 0.75;
 
