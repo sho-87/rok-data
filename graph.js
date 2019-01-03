@@ -110,7 +110,7 @@ function loadGraph(file, strength, distance) {
           .data(links)
           .enter()
           .append('line')
-          .attr('stroke-width', d => Math.sqrt(d.rank) * 0.5);
+          .attr('stroke-width', d => (1/d.rank) * 2);
 
         // nodes
         const node = g
