@@ -280,7 +280,7 @@ function loadGraph(file, strength, distance) {
               x = rows[i].getElementsByTagName('TD')[2];
               y = rows[i + 1].getElementsByTagName('TD')[2];
 
-              if (Number(x.innerHTML) < Number(y.innerHTML)) {
+              if (Number(x.innerHTML) > Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
               }
