@@ -87,7 +87,7 @@ function loadGraph(file, strength, distance) {
         links = links.map(d => ({
           source: d.primary,
           target: d.secondary,
-          value: d.value
+          rank: d.rank
         }));
 
         // calculate node weights (number of links)
@@ -110,7 +110,7 @@ function loadGraph(file, strength, distance) {
           .data(links)
           .enter()
           .append('line')
-          .attr('stroke-width', d => Math.sqrt(d.value) * 0.5);
+          .attr('stroke-width', d => Math.sqrt(d.rank) * 0.5);
 
         // nodes
         const node = g
@@ -146,34 +146,34 @@ function loadGraph(file, strength, distance) {
                         <tr style="font-weight:bold">
                           <td class='primary'>Primary</td>
                           <td class='secondary'>Secondary</td>
-                          <td>Value</td>
+                          <td>Rank</td>
                         </tr>`;
 
-            value_sum = 0;
+            rank_sum = 0;
             links.forEach(pair => {
               if (d.id === pair.source.id) {
-                value_sum += Number(pair.value);
+                rank_sum += Number(pair.rank);
                 table += `<tr><td style='font-weight:bold'>${
                   pair.source.id
-                }</td><td>${pair.target.id}</td><td>${pair.value}</td></tr>`;
+                }</td><td>${pair.target.id}</td><td>${pair.rank}</td></tr>`;
               } else if (d.id === pair.target.id) {
-                value_sum += Number(pair.value);
+                rank_sum += Number(pair.rank);
                 table += `<tr><td>${
                   pair.source.id
                 }</td><td style='font-weight:bold'>${pair.target.id}</td><td>${
-                  pair.value
+                  pair.rank
                 }</td></tr>`;
               }
             });
             table += '</table>';
 
-            info_value = `<br>Pairing score: ${(value_sum / 378).toFixed(2)}`;
+            info_rank = `<br>Mean rank: ${(rank_sum / d.weight).toFixed(2)}`;
 
             tooltip
               .transition()
               .duration(300)
               .style('opacity', 1);
-            tooltip.html(info + info_value + table);
+            tooltip.html(info + info_rank + table);
 
             sortTable();
           })
