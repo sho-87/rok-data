@@ -3,15 +3,17 @@ const meta = {
   'Legend Rhony': {
     file: 'legend_rhony.csv',
     web: 'https://www.youtube.com/channel/UCDKUIl7MVHNTjZgDRPDUdxw',
-    strength: -2000,
-    distance: 500
+    strength: -3000,
+    distance: 500,
+    radius: 1.5
   },
   detectiveG: {
     file: 'detectiveG.csv',
     web:
       'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
     strength: -1500,
-    distance: 500
+    distance: 500,
+    radius: 2
   }
 };
 
@@ -37,11 +39,12 @@ function changeData() {
   loadGraph(
     meta[selection].file,
     meta[selection].strength,
-    meta[selection].distance
+    meta[selection].distance,
+    meta[selection].radius
   );
 }
 
-function loadGraph(file, strength, distance) {
+function loadGraph(file, strength, distance, radius) {
   const svg = d3.select('svg'),
     width = +svg.attr('width'),
     height = +svg.attr('height');
@@ -134,7 +137,7 @@ function loadGraph(file, strength, distance) {
 
         node
           .append('circle')
-          .attr('r', d => d.weight * 1.5)
+          .attr('r', d => d.weight * radius)
           .attr('fill', d => color(d.group))
           .on('mouseover.tooltip', function(d) {
             // Generate tooltip text
