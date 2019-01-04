@@ -1,14 +1,14 @@
-// Initial page setup
-const meta = {
+// Set paths and options
+const guides = {
   'Legend Rhony': {
-    file: 'legend_rhony.csv',
+    file: 'links/legend_rhony.csv',
     web: 'https://www.youtube.com/channel/UCDKUIl7MVHNTjZgDRPDUdxw',
     strength: -3000,
     distance: 500,
     radius: 1.5
   },
   detectiveG: {
-    file: 'detectiveG.csv',
+    file: 'links/detectiveG.csv',
     web:
       'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
     strength: -1500,
@@ -17,8 +17,10 @@ const meta = {
   }
 };
 
+const commanders = 'commanders.json';
+
 // Set dropdown options
-const options = Object.keys(meta);
+const options = Object.keys(guides);
 
 const select = document.getElementById('dropdown');
 
@@ -28,6 +30,7 @@ for (let i = 0; i < options.length; i++) {
   select.appendChild(opt);
 }
 
+// Set initial data
 changeData();
 
 // Functions for graph generation
@@ -35,13 +38,13 @@ function changeData() {
   selection = document.getElementById('dropdown').value;
 
   a = document.getElementById('link');
-  a.href = meta[selection].web;
+  a.href = guides[selection].web;
 
   loadGraph(
-    meta[selection].file,
-    meta[selection].strength,
-    meta[selection].distance,
-    meta[selection].radius
+    guides[selection].file,
+    guides[selection].strength,
+    guides[selection].distance,
+    guides[selection].radius
   );
 }
 
@@ -82,8 +85,8 @@ function loadGraph(file, strength, distance, radius) {
 
   // Read data from files
   d3.queue()
-    .defer(d3.json, 'commanders.json')
-    .defer(d3.csv, `links/${file}`)
+    .defer(d3.json, commanders)
+    .defer(d3.csv, file)
     .await(function(error, commanders, links) {
       if (error) {
         console.error(error);
@@ -114,7 +117,7 @@ function loadGraph(file, strength, distance, radius) {
           .data(links)
           .enter()
           .append('line')
-          .attr('stroke-width', d => (1/d.rank) * 2);
+          .attr('stroke-width', d => (1 / d.rank) * 2);
 
         // nodes
         const node = g
