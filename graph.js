@@ -1,60 +1,79 @@
 // Set paths and options
 const guides = {
-  'Legend Rhony (PVP)': {
-    file: 'links/legend_rhony.csv',
-    url: 'https://www.youtube.com/watch?v=s-Ay1RhwnP4',
-    strength: -3000,
-    distance: 500,
-    radius: 1.5
+  General: {
+    'Legend Rhony': {
+      file: 'links/legend_rhony.csv',
+      url: 'https://www.youtube.com/watch?v=s-Ay1RhwnP4',
+      strength: -3000,
+      distance: 500,
+      radius: 1.5
+    },
+    detectiveG: {
+      file: 'links/detectiveG.csv',
+      url:
+        'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
+      strength: -1500,
+      distance: 500,
+      radius: 2
+    }
   },
-  'Legend Rhony (Garrison)': {
-    file: 'links/legend_rhony_garrison.csv',
-    url: 'https://www.youtube.com/watch?v=YhxwVI6j1mI',
-    strength: -3000,
-    distance: 500,
-    radius: 3
-  },
-  detectiveG: {
-    file: 'links/detectiveG.csv',
-    url:
-      'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
-    strength: -1500,
-    distance: 500,
-    radius: 2
+  Garrison: {
+    'Legend Rhony': {
+      file: 'links/legend_rhony_garrison.csv',
+      url: 'https://www.youtube.com/watch?v=YhxwVI6j1mI',
+      strength: -3000,
+      distance: 500,
+      radius: 3
+    }
   }
 };
 
 const commanders = 'commanders.json';
 
-// Set dropdown options
-const options = Object.keys(guides);
+// Set initial options
+const options_type = Object.keys(guides);
+const select_type = document.getElementById('dropdown_type');
+const select_guide = document.getElementById('dropdown_guide');
 
-const select = document.getElementById('dropdown');
-
-for (let i = 0; i < options.length; i++) {
+for (let i = 0; i < options_type.length; i++) {
   opt = document.createElement('option');
-  opt.textContent = options[i];
-  select.appendChild(opt);
+  opt.textContent = options_type[i];
+  select_type.appendChild(opt);
 }
 
-// Set initial data
-changeData();
+changeType();
 
-// Functions for graph generation
-function changeData() {
-  selection = document.getElementById('dropdown').value;
+// Functions for guide selection
+function changeType() {
+  select_guide.length = 0;
+
+  const guide_list = Object.keys(guides[select_type.value]);
+
+  for (let i = 0; i < guide_list.length; i++) {
+    opt = document.createElement('option');
+    opt.textContent = guide_list[i];
+    select_guide.appendChild(opt);
+  }
+
+  changeGuide();
+}
+
+function changeGuide() {
+  guide_type = select_type.value;
+  guide = select_guide.value;
 
   a = document.getElementById('link');
-  a.href = guides[selection].url;
+  a.href = guides[guide_type][guide].url;
 
   loadGraph(
-    guides[selection].file,
-    guides[selection].strength,
-    guides[selection].distance,
-    guides[selection].radius
+    guides[guide_type][guide].file,
+    guides[guide_type][guide].strength,
+    guides[guide_type][guide].distance,
+    guides[guide_type][guide].radius
   );
 }
 
+// Functions for graph generation
 function loadGraph(file, strength, distance, radius) {
   const svg = d3.select('svg'),
     width = +svg.attr('width'),
