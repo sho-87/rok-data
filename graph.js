@@ -2,14 +2,14 @@
 const guides = {
   General: {
     'Legend Rhony': {
-      data: 'links/legend_rhony.csv',
+      data: 'data/legend_rhony.csv',
       url: 'https://www.youtube.com/watch?v=s-Ay1RhwnP4',
       strength: -3000,
       distance: 500,
       radius: 1.5
     },
     detectiveG: {
-      data: 'links/detectiveG.csv',
+      data: 'data/detectiveG.csv',
       url:
         'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
       strength: -1500,
@@ -19,7 +19,7 @@ const guides = {
   },
   Garrison: {
     'Legend Rhony': {
-      data: 'links/legend_rhony_garrison.csv',
+      data: 'data/legend_rhony_garrison.csv',
       url: 'https://www.youtube.com/watch?v=YhxwVI6j1mI',
       strength: -3000,
       distance: 500,
