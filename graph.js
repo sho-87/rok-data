@@ -230,7 +230,7 @@ function loadGraph(data, strength, distance, radius) {
               .duration(100)
               .style('opacity', 0);
           })
-          .on('mouseover.fade', fade(0.1))
+          .on('mouseover.fade', fade(0.05))
           .on('mouseout.fade', fade(1));
 
         // node labels
