@@ -1,6 +1,6 @@
 // Set paths and options
 const guides = {
-  'Legend Rhony': {
+  'Legend Rhony (PVP)': {
     file: 'links/legend_rhony.csv',
     web: 'https://www.youtube.com/channel/UCDKUIl7MVHNTjZgDRPDUdxw',
     strength: -3000,
