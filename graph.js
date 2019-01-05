@@ -149,30 +149,45 @@ function loadGraph(file, strength, distance, radius) {
               d.group
             }</span><br>Versatility (# of pairs): ${d.weight}`;
 
-            table = `<p><table id='tooltipTable' border=1>
-                        <tr style="font-weight:bold">
-                          <td class='primary'>Primary</td>
-                          <td class='secondary'>Secondary</td>
-                          <td>Rank</td>
-                        </tr>`;
+            table_primary = `<p><table id='tooltipTablePrimary' border=1>`;
+            table_secondary = `<p><table id='tooltipTableSecondary' border=1>`;
+
+            header = `<tr style="font-weight:bold">
+            <td class='primary' width='45%'>Primary</td>
+            <td class='secondary' width='45%'>Secondary</td>
+            <td>Rank</td></tr>`;
 
             rank_sum = 0;
+            rows_primary = '';
+            rows_secondary = '';
+
             links.forEach(pair => {
               if (d.id === pair.source.id) {
                 rank_sum += Number(pair.rank);
-                table += `<tr><td style='font-weight:bold'>${
+                rows_primary += `<tr><td style='font-weight:bold'>${
                   pair.source.id
                 }</td><td>${pair.target.id}</td><td>${pair.rank}</td></tr>`;
               } else if (d.id === pair.target.id) {
                 rank_sum += Number(pair.rank);
-                table += `<tr><td>${
+                rows_secondary += `<tr><td>${
                   pair.source.id
                 }</td><td style='font-weight:bold'>${pair.target.id}</td><td>${
                   pair.rank
                 }</td></tr>`;
               }
             });
-            table += '</table>';
+
+            table_primary += header + rows_primary + '</table>';
+            table_secondary += header + rows_secondary + '</table>';
+
+            tables_combined = '';
+            if(rows_primary !== ''){
+              tables_combined += table_primary;
+            }
+
+            if(rows_secondary !== ''){
+              tables_combined += table_secondary;
+            }
 
             info_rank = `<br>Mean rank: ${(rank_sum / d.weight).toFixed(2)}`;
 
@@ -180,9 +195,10 @@ function loadGraph(file, strength, distance, radius) {
               .transition()
               .duration(300)
               .style('opacity', 1);
-            tooltip.html(info + info_rank + table);
+            tooltip.html(info + info_rank + tables_combined);
 
-            sortTable();
+            sortTable('tooltipTablePrimary');
+            sortTable('tooltipTableSecondary');
           })
           .on('mouseout.tooltip', function() {
             tooltip
@@ -272,14 +288,20 @@ function loadGraph(file, strength, distance, radius) {
           };
         }
 
-        function sortTable() {
+        function sortTable(id) {
           var table, rows, switching, i, x, y, shouldSwitch;
-          table = document.getElementById('tooltipTable');
+          table = document.getElementById(id);
           switching = true;
 
           while (switching) {
+            try {
+              rows = table.rows;
+            }
+            catch(err) {
+              return;
+            }
+
             switching = false;
-            rows = table.rows;
 
             for (i = 1; i < rows.length - 1; i++) {
               shouldSwitch = false;
