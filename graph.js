@@ -2,14 +2,14 @@
 const guides = {
   General: {
     'Legend Rhony': {
-      file: 'links/legend_rhony.csv',
+      data: 'links/legend_rhony.csv',
       url: 'https://www.youtube.com/watch?v=s-Ay1RhwnP4',
       strength: -3000,
       distance: 500,
       radius: 1.5
     },
     detectiveG: {
-      file: 'links/detectiveG.csv',
+      data: 'links/detectiveG.csv',
       url:
         'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
       strength: -1500,
@@ -19,7 +19,7 @@ const guides = {
   },
   Garrison: {
     'Legend Rhony': {
-      file: 'links/legend_rhony_garrison.csv',
+      data: 'links/legend_rhony_garrison.csv',
       url: 'https://www.youtube.com/watch?v=YhxwVI6j1mI',
       strength: -3000,
       distance: 500,
@@ -66,7 +66,7 @@ function changeGuide() {
   a.href = guides[guide_type][guide].url;
 
   loadGraph(
-    guides[guide_type][guide].file,
+    guides[guide_type][guide].data,
     guides[guide_type][guide].strength,
     guides[guide_type][guide].distance,
     guides[guide_type][guide].radius
@@ -74,7 +74,7 @@ function changeGuide() {
 }
 
 // Functions for graph generation
-function loadGraph(file, strength, distance, radius) {
+function loadGraph(data, strength, distance, radius) {
   const svg = d3.select('svg'),
     width = +svg.attr('width'),
     height = +svg.attr('height');
@@ -112,7 +112,7 @@ function loadGraph(file, strength, distance, radius) {
   // Read data from files
   d3.queue()
     .defer(d3.json, commanders)
-    .defer(d3.csv, file)
+    .defer(d3.csv, data)
     .await(function(error, commanders, links) {
       if (error) {
         console.error(error);
