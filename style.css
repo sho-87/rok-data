@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .column {
   float: left;
   width: 30%;
@@ -26,9 +30,8 @@ svg {
   stroke-width: 1px;
 }
 
-text {
-  font-family: sans-serif;
-  font-size: 16px;
+.labels {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -43,14 +46,11 @@ text {
 div.tooltip {
   position: relative;
   top:10px;
+  font-size: 14px;
   background-color: white;
   opacity: 0;
   height: auto;
   padding: 10px;
-  /* border-style: solid;
-  border-radius: 2px;
-  border-width: 1px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
 
 div.tooltip .Legendary {

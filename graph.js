@@ -239,6 +239,7 @@ function loadGraph(data, strength, distance, radius) {
         node
           .append('text')
           .text(d => d.id)
+          .attr('class', 'labels')
           .attr('x', 0)
           .attr('y', 0);
 
