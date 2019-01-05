@@ -215,13 +215,11 @@ function loadGraph(data, strength, distance, radius) {
               tables_combined += table_secondary;
             }
 
-            info_rank = `<br>Mean rank: ${(rank_sum / d.weight).toFixed(2)}`;
-
             tooltip
               .transition()
               .duration(300)
               .style('opacity', 1);
-            tooltip.html(info + info_rank + tables_combined);
+            tooltip.html(info + tables_combined);
 
             sortTable('tooltipTablePrimary');
             sortTable('tooltipTableSecondary');
