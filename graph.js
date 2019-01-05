@@ -181,11 +181,11 @@ function loadGraph(file, strength, distance, radius) {
             table_secondary += header + rows_secondary + '</table>';
 
             tables_combined = '';
-            if(rows_primary !== ''){
+            if (rows_primary !== '') {
               tables_combined += table_primary;
             }
 
-            if(rows_secondary !== ''){
+            if (rows_secondary !== '') {
               tables_combined += table_secondary;
             }
 
@@ -296,8 +296,7 @@ function loadGraph(file, strength, distance, radius) {
           while (switching) {
             try {
               rows = table.rows;
-            }
-            catch(err) {
+            } catch (err) {
               return;
             }
 
