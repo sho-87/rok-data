@@ -47,7 +47,7 @@ changeType();
 function changeType() {
   select_guide.length = 0;
 
-  const guide_list = Object.keys(guides[select_type.value]);
+  guide_list = Object.keys(guides[select_type.value]);
 
   for (let i = 0; i < guide_list.length; i++) {
     opt = document.createElement('option');
