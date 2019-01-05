@@ -2,14 +2,14 @@
 const guides = {
   'Legend Rhony (PVP)': {
     file: 'links/legend_rhony.csv',
-    web: 'https://www.youtube.com/channel/UCDKUIl7MVHNTjZgDRPDUdxw',
+    url: 'https://www.youtube.com/watch?v=s-Ay1RhwnP4',
     strength: -3000,
     distance: 500,
     radius: 1.5
   },
   detectiveG: {
     file: 'links/detectiveG.csv',
-    web:
+    url:
       'https://docs.google.com/spreadsheets/d/1YqsYjNAxzHHODfzJoPhN3kzyG9xwGvK7NmoK1e3ADdk',
     strength: -1500,
     distance: 500,
@@ -38,7 +38,7 @@ function changeData() {
   selection = document.getElementById('dropdown').value;
 
   a = document.getElementById('link');
-  a.href = guides[selection].web;
+  a.href = guides[selection].url;
 
   loadGraph(
     guides[selection].file,
