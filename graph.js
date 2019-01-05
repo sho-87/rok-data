@@ -7,6 +7,13 @@ const guides = {
     distance: 500,
     radius: 1.5
   },
+  'Legend Rhony (Garrison)': {
+    file: 'links/legend_rhony_garrison.csv',
+    url: 'https://www.youtube.com/watch?v=YhxwVI6j1mI',
+    strength: -3000,
+    distance: 500,
+    radius: 3
+  },
   detectiveG: {
     file: 'links/detectiveG.csv',
     url:

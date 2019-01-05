@@ -1,0 +1,32 @@
+primary,secondary,rank
+Richard I,Charles Martel,1
+Richard I,Boudica,2
+Richard I,Scipio Africanus,2
+Richard I,Joan of Arc,2
+Richard I,Eulji Mundeok,2
+Richard I,Pelagius,3
+Charles Martel,Richard I,1
+Charles Martel,Boudica,2
+Charles Martel,Scipio Africanus,2
+Charles Martel,Joan of Arc,2
+Charles Martel,Eulji Mundeok,2
+Charles Martel,Pelagius,3
+Yi Seong-Gye,Sun Tzu,2
+Eulji Mundeok,Joan of Arc,3
+Eulji Mundeok,Boudica,3
+Eulji Mundeok,Scipio Africanus,3
+Eulji Mundeok,Pelagius,4
+Pelagius,Joan of Arc,4
+Pelagius,Boudica,4
+Pelagius,Scipio Africanus,4
+Pelagius,Eulji Mundeok,4
+Kusunoki Masashige,Joan of Arc,5
+Kusunoki Masashige,Boudica,5
+Kusunoki Masashige,Scipio Africanus,5
+Kusunoki Masashige,Eulji Mundeok,5
+Kusunoki Masashige,Pelagius,6
+Hermann,Joan of Arc,5
+Hermann,Boudica,5
+Hermann,Scipio Africanus,5
+Hermann,Eulji Mundeok,5
+Hermann,Pelagius,6
