@@ -3,7 +3,7 @@ const guides = {
   General: {
     'Legend Rhony': {
       data: 'data/legend_rhony.csv',
-      url: 'https://www.youtube.com/watch?v=s-Ay1RhwnP4',
+      url: 'https://www.youtube.com/watch?v=gSY6CfG2vg4',
       strength: -3000,
       distance: 500,
       radius: 1.5
