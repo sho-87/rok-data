@@ -1,57 +1,63 @@
 primary,secondary,rank
-Pelagius,Boudica,1
-Pelagius,Minamoto no Yoshitsune,1
-Pelagius,Joan of Arc,2
-Pelagius,Cao Cao,2
-Pelagius,Scipio Africanus,3
-Pelagius,Frederick I,3
-Pelagius,Hermann,4
+Baibars,Sun Tzu,1
+Baibars,Kusunoki Masashige,2
+Baibars,Mehmed II,3
+Baibars,Yi Seong-Gye,3
+Baibars,Belisarius,4
+Baibars,Pelagius,4
+Baibars,Minamoto no Yoshitsune,4
+Baibars,Cao Cao,4
+Osman I,Scipio Africanus,1
+Osman I,Boudica,1
+Osman I,Hermann,1
+Osman I,Yi Seong-Gye,2
+Osman I,Frederick I,2
+Osman I,Pelagius,3
+Osman I,Belisarius,3
+Osman I,Richard I,4
+Sun Tzu,Baibars,1
+Sun Tzu,Kusunoki Masashige,2
+Sun Tzu,Yi Seong-Gye,2
+Sun Tzu,Mehmed II,3
+Pelagius,Belisarius,1
+Pelagius,Minamoto no Yoshitsune,2
+Pelagius,Cao Cao,3
+Pelagius,Boudica,4
+Pelagius,Osman I,4
+Pelagius,Scipio Africanus,4
+Pelagius,Joan of Arc,4
 Eulji Mundeok,Scipio Africanus,1
 Eulji Mundeok,Charles Martel,1
 Eulji Mundeok,Richard I,1
 Eulji Mundeok,Boudica,2
-Eulji Mundeok,Julius Caesar,2
-Eulji Mundeok,Frederick I,2
-Eulji Mundeok,Joan of Arc,3
-Sun Tzu,Kusunoki Masashige,1
-Sun Tzu,Yi Seong-Gye,1
-Sun Tzu,Tomoe Gozen,2
-Sun Tzu,Richard I,2
-Sun Tzu,Joan of Arc,3
-Sun Tzu,Boudica,4
-Sun Tzu,Hermann,4
-Kusunoki Masashige,Sun Tzu,1
+Eulji Mundeok,Joan of Arc,2
+Eulji Mundeok,Osman I,3
 Kusunoki Masashige,Yi Seong-Gye,1
-Kusunoki Masashige,Hermann,1
-Kusunoki Masashige,Frederick I,2
-Kusunoki Masashige,Joan of Arc,3
+Kusunoki Masashige,Sun Tzu,2
+Kusunoki Masashige,Hermann,3
+Kusunoki Masashige,Osman I,4
+Kusunoki Masashige,Joan of Arc,4
 Kusunoki Masashige,Boudica,4
-Kusunoki Masashige,Scipio Africanus,4
-Kusunoki Masashige,Tomoe Gozen,4
-Hermann,Tomoe Gozen,1
+Scipio Africanus,Julius Caesar,1
+Scipio Africanus,Hannibal Barca,2
+Scipio Africanus,Osman I,3
+Scipio Africanus,Boudica,4
+Scipio Africanus,Joan of Arc,4
+Scipio Africanus,Belisarius,4
+Scipio Africanus,Eulji Mundeok,4
 Hermann,El Cid,1
-Hermann,Joan of Arc,2
+Hermann,Osman I,2
 Hermann,Boudica,3
-Hermann,Scipio Africanus,4
-Scipio Africanus,Eulji Mundeok,1
-Scipio Africanus,Richard I,1
-Scipio Africanus,Boudica,2
-Scipio Africanus,Julius Caesar,2
-Scipio Africanus,Joan of Arc,3
-Scipio Africanus,Charles Martel,3
-Scipio Africanus,Frederick I,4
-Scipio Africanus,Hannibal Barca,4
-Boudica,Hermann,1
-Boudica,Richard I,1
-Boudica,Joan of Arc,2
-Boudica,Minamoto no Yoshitsune,2
-Boudica,Scipio Africanus,3
-Boudica,Frederick I,3
-Boudica,Eulji Mundeok,4
+Hermann,Joan of Arc,3
+Hermann,Kusunoki Masashige,4
+Hermann,Yi Seong-Gye,4
+Boudica,Osman I,1
+Boudica,Scipio Africanus,2
+Boudica,Hermann,3
+Boudica,Joan of Arc,3
 Boudica,Pelagius,4
-Boudica,Tomoe Gozen,4
+Boudica,Richard I,4
 Boudica,Charles Martel,4
-Boudica,Yi Seong-Gye,4
 El Cid,Hermann,1
 El Cid,Kusunoki Masashige,1
 El Cid,Frederick I,2
@@ -94,7 +100,6 @@ Julius Caesar,Frederick I,3
 Julius Caesar,Richard I,4
 Julius Caesar,Charles Martel,4
 Julius Caesar,Joan of Arc,4
-Joan of Arc,Cleopatra VII,1
 Minamoto no Yoshitsune,Cao Cao,1
 Minamoto no Yoshitsune,Frederick I,2
 Minamoto no Yoshitsune,Pelagius,3
@@ -119,11 +124,6 @@ Charles Martel,Scipio Africanus,4
 Charles Martel,Joan of Arc,4
 Charles Martel,Frederick I,4
 Charles Martel,Julius Caesar,4
-Cleopatra VII,Centurion,1
-Joan of Arc,Centurion,1
-Sarka,Centurion,1
-Constance,Centurion,1
-Gaius Marius,Centurion,1
 City Keeper,Richard I,1
 City Keeper,Charles Martel,2
 City Keeper,Eulji Mundeok,3
