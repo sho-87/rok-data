@@ -1,9 +1,9 @@
-# Rise of Civilizations data
+# Rise of Kingdoms data
 
-Data and code used to create force-directed graphs for RoC commander pairings.
+Code used to analyze data for Rise of Kingdoms.
 
-More information can be found [here](https://www.simonho.ca/gaming/roc-commander-pairings/)
+Associated blog posts can be found [here](https://www.simonho.ca/tag/rise-of-kingdoms/)
 
-## Screenshot
+## Commander Pairings
 
 ![screenshot](images/pairings.png)
